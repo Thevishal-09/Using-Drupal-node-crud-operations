@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.storage.node.body
+        - node.type.student_crud
+    module:
+        - text
+id: node.student_crud.body
+field_name: body
+entity_type: node
+bundle: student_crud
+label: Answer
+description: 'More specific information about the Crud .'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+    display_summary: true
+field_type: text_with_summary
+

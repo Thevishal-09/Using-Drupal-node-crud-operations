@@ -1,0 +1,7 @@
+crud-prescription:
+  version: 2.x
+  js:
+    js/style_k.js: {}
+  css:
+    component:
+      custom/ptcss.css: {}

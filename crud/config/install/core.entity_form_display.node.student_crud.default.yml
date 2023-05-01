@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.field.node.student_crud.body
+        - node.type.student_crud
+    module:
+        - text
+        - user
+id: node.student_crud.default
+targetEntityType: node
+bundle: student_crud
+mode: default
+content:
+    body:
+        label: hidden
+        type: text_textarea_with_summary
+        weight: 101
+        settings: {  }
+        third_party_settings: {  }
+    links:
+        weight: 100
+hidden: {  }

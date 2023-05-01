@@ -1,0 +1,21 @@
+crud.view.dashboard:
+  path: '/view-data'
+  defaults:
+    _controller: 'Drupal\crud\Controller\CrudController::displayNodeData'
+  requirements:
+    _permission: 'access content'
+
+crud.register.form:
+ path: '/student-registration'
+ defaults:
+   _title: 'Application form'
+   _form: '\Drupal\crud\Form\RegistrationForm'
+ requirements:
+   _permission: 'access content'
+
+crud.delete.data:
+ path: '/deletedata/{id}'
+ defaults:
+    _controller: 'Drupal\crud\Controller\CrudController::DeleteData'
+ requirements:
+   _permission: 'access content'   
